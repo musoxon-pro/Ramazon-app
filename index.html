@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>Ramazon 2026</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="icon-192.png">
+    <meta name="theme-color" content="#4CAF50">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌙 Ramazon 2026</h1>
+            <p class="hijri-date"></p>
+            <p class="gregorian-date"></p>
+        </header>
+
+        <div class="location-section">
+            <label for="city">Shaharni tanlang:</label>
+            <select id="city">
+                <option value="Toshkent">Toshkent</option>
+                <option value="Samarqand">Samarqand</option>
+                <option value="Buxoro">Buxoro</option>
+                <option value="Farg'ona">Farg‘ona</option>
+                <option value="Andijon">Andijon</option>
+                <option value="Namangan">Namangan</option>
+                <option value="Qarshi">Qarshi</option>
+                <option value="Guliston">Guliston</option>
+                <option value="Urganch">Urganch</option>
+                <option value="Nukus">Nukus</option>
+            </select>
+            <button id="detect-location">📍 Mening joylashuvim</button>
+        </div>
+
+        <div class="times-card">
+            <h2>Bugungi vaqtlar</h2>
+            <div class="time-row">
+                <span>Saharlik (Fajr):</span>
+                <span id="saharlik">--:--</span>
+            </div>
+            <div class="time-row">
+                <span>Iftorlik (Maghrib):</span>
+                <span id="iftorlik">--:--</span>
+            </div>
+            <div class="countdown">
+                <p>Iftorga qolgan vaqt: <span id="countdown">--:--:--</span></p>
+            </div>
+        </div>
+
+        <div class="duas-section">
+            <h2>Duolar</h2>
+            <div class="dua-card">
+                <h3>🤲 Ro‘za tutish duosi (niyat)</h3>
+                <p class="arabic">نَوَيْتُ أَنْ أَصُومَ غَدًا عَنْ أَدَاءِ فَرْضِ شَهْرِ رَمَضَانَ هَذِهِ السَّنَةَ لِلَّهِ تَعَالَى</p>
+                <p class="transliteration">Navaytu an asuma ghadan an adai fardi shahri Ramazona hazihis sanati lillahi ta'ala</p>
+                <p class="meaning">Ma'nosi: Men Ramazon oyining bugungi farz ro‘zasini ertaga tutishga niyat qildim, xolis Alloh uchun.</p>
+                <button class="play-sound" data-text="Navaytu an asuma ghadan an adai fardi shahri Ramazona hazihis sanati lillahi ta'ala">🔊 Eshitish</button>
+            </div>
+            <div class="dua-card">
+                <h3>🤲 Iftorlik duosi</h3>
+                <p class="arabic">اللَّهُمَّ لَكَ صُمْتُ وَعَلَى رِزْقِكَ أَفْطَرْتُ ذَهَبَ الظَّمَأُ وَابْتَلَّتِ الْعُرُوقُ وَثَبَتَ الأَجْرُ إِنْ شَاءَ اللَّهُ</p>
+                <p class="transliteration">Allohumma laka sumtu va ‘ala rizqika aftartu, zahaba-z-zama'u vabtallati-l-'uruqu va sabata-l-ajru in sha'Alloh</p>
+                <p class="meaning">Ma'nosi: Allohim, Sen uchun ro‘za tutdim va Sen bergan rizq bilan iftor qildim. Tashnalik ketdi, tomirlar ho‘l bo‘ldi va ajr qaror topdi, in sha Alloh.</p>
+                <button class="play-sound" data-text="Allohumma laka sumtu wa ala rizqika aftartu, zahaba az-zamau wabtallati al-uruqu wa sabata al-ajru in shaAlloh">🔊 Eshitish</button>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2026 Ramazon ilovasi. Barcha haqqlar himoyalangan.</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
